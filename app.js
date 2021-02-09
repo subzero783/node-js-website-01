@@ -1,18 +1,28 @@
+const browserSync = require('browser-sync');
 const express = require('express');
-
+const path = require('path');
+const port = process.env.PORT || 3000;
 const app = express();
 
 app.set('view engine', 'pug');
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', (req, res)=>{
     // res.status(200).json({user:'toby'});
     res.render('index');
 });
 
+app.get('/cards', (req, res)=>{
+    res.render('card', {
+        prompt: 'Who is burried in Grant\'s tomb',
+        // hint: "Think about who's tomb it is"
+    });
+})
+
 app.get('/hello', (req, res)=>{
     res.status(200).send('<h1>Hello, JavaScript Developer. Learn more at http://referrals.trhou.se/gustavoamezcua</h1>');
 });
 
-app.listen(3000, ()=>{
-    console.log('The application is running on localhost:3000');
+app.listen(port, ()=>{
+    console.log(`Running on port ${port}`);
 });
