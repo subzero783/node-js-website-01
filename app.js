@@ -10,7 +10,7 @@ app.get('/', (req, res)=>{
 });
 
 app.get('/hello', (req, res)=>{
-    res.status(200).send('<h1>Hello, JavaScript Developer</h1>');
+    res.status(200).send('<h1>Hello, JavaScript Developer. Learn more at http://referrals.trhou.se/gustavoamezcua</h1>');
 });
 
 app.listen(3000, ()=>{
