@@ -1,0 +1,26 @@
+{
+  "name": "flashcards",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Gustavo Amezcua subzero783",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.2",
+    "pug": "^3.0.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/subzero783/express-basic.git"
+  },
+  "bugs": {
+    "url": "https://github.com/subzero783/express-basic/issues"
+  },
+  "homepage": "https://github.com/subzero783/express-basic#readme",
+  "description": ""
+}
