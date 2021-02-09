@@ -4,7 +4,6 @@ const sass = require('gulp-sass');
 const sync = require('browser-sync').create();
 const uglify = require('gulp-uglify');
 const sourcemaps = require('gulp-sourcemaps');
-const cssnano = require('cssnano');
 const autoprefixer = require('gulp-autoprefixer');
 const rename = require('gulp-rename');
 

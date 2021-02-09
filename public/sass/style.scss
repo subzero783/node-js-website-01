@@ -5,3 +5,10 @@ body {
   font: 100% $font-stack;
   color: $primary-color;
 }
+
+ul {
+  > li {
+    color: blue;
+    font-weight: bold;
+  }
+}

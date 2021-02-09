@@ -7,6 +7,9 @@ html(lang="en")
         header 
             h1 Flash Cards 
         section#content
+            ul 
+                each color in colors 
+                    li= color
             h2= prompt
             if hint 
                 p 

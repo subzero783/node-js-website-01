@@ -4,6 +4,15 @@ const path = require('path');
 const port = process.env.PORT || 3000;
 const app = express();
 
+const colors = [
+    'red',
+    'orange',
+    'yellow',
+    'green',
+    'blue',
+    'purple'
+  ];
+
 app.set('view engine', 'pug');
 app.use(express.static(path.join(__dirname, 'public')));
 
@@ -16,6 +25,7 @@ app.get('/cards', (req, res)=>{
     res.render('card', {
         prompt: 'Who is burried in Grant\'s tomb',
         // hint: "Think about who's tomb it is"
+        colors
     });
 })
 
