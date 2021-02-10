@@ -1,19 +1,7 @@
-doctype html
-html(lang="en")
-    head
-        title Flash Cards
-        link(rel="stylesheet" href="/css/style.min.css")
-    body
-        header 
-            h1 Flash Cards 
-        section#content
-            ul 
-                each color in colors 
-                    li= color
-            h2= prompt
-            if hint 
-                p 
-                    i Hint: #{hint}
-        footer
-            p An app to help you study 
-        script(src='/js/scripts.min.js')
+extends layout.pug 
+block content
+    section#content
+        h2= prompt
+        if hint 
+            p 
+                i Hint: #{hint}

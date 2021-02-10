@@ -30,6 +30,7 @@ function browsersync(cb){
     watch('./public/sass/**.scss', generate_CSS).on('change', sync.reload);
     watch('./public/dev-js/**.js', generate_JS).on('change', sync.reload);
     watch('./public/**.html').on('change', sync.reload);
+    watch('./views/**.pug').on('change', sync.reload);
 }
 
 function generate_JS(cb){
@@ -45,6 +46,7 @@ function generate_JS(cb){
 
 function defaultTask(cb){
     watch('./public/sass/**.scss', generate_CSS);
+    watch('./public/dev-js/**.js', generate_JS);
     cb();
 }
 
