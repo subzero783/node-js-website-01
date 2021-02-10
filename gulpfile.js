@@ -24,7 +24,7 @@ function generate_CSS(cb){
 
 function browsersync(cb){
     sync.init({
-        proxy: "http://localhost:3000",
+        proxy: "http://localhost:8000",
         open: false
     });
     watch('./public/sass/**.scss', generate_CSS).on('change', sync.reload);

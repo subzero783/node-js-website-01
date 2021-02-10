@@ -4,6 +4,7 @@
   "main": "app.js",
   "scripts": {
     "start": "nodemon app.js",
+    "dev": "gulp sync",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
