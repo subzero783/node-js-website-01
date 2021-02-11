@@ -2,11 +2,6 @@
 const express = require('express');
 const router = express.Router();
 
-router.use((req, res, next)=>{
-    console.log(req.message);
-    next();
-});
-
 router.get('/', (req, res)=>{
     const name = req.cookies.username;
     if(name){

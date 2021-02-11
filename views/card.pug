@@ -1,7 +1,12 @@
-extends layout.pug 
+
+extends layout
 block content
     section#content
-        h2= prompt
+        h2= text
         if hint 
             p 
                 i Hint: #{hint}
+        a(href=`${id}?side=${sideToShow}`)= sideToShowDisplay
+        br
+        form(action="/cards", method="get")
+            button(type="submit") Random Card
