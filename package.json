@@ -1,5 +1,5 @@
 {
-  "name": "flashcards",
+  "name": "node-js-website",
   "version": "1.0.0",
   "main": "app.js",
   "scripts": {
@@ -29,11 +29,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/subzero783/express-basic.git"
+    "url": "git+https://github.com/subzero783/node-js-website-01.git"
   },
   "bugs": {
-    "url": "https://github.com/subzero783/express-basic/issues"
+    "url": "https://github.com/subzero783/node-js-website-01.git/issues"
   },
-  "homepage": "https://github.com/subzero783/express-basic#readme",
-  "description": ""
+  "homepage": "https://github.com/subzero783/node-js-website-01.git#readme",
+  "description": "To install this express app, follow the instructions below: \r 1. Make sure you have NodeJS and NPM installed on your computer.\r 2. Clone the repo on your computer. \r 3. Execute the command of `npm install` in your git bash terminal at the root of your cloned repo. \r 4. Run the Express app by executing in the git bash terminal the command of `npm start`."
 }
