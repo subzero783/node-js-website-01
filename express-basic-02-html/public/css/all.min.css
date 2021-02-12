@@ -1,9 +1,6 @@
 @font-face {
-  font-family: Marcellus;
+  font-family: 'Marcellus';
   src: url(../fonts/Marcellus-Regular.ttf); }
-
-body {
-  font-family: 'Marcellus', serif; }
 
 /*!
  * Bootstrap v4.6.0 (https://getbootstrap.com/)
@@ -7260,6 +7257,7 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6; } }
 
 body {
-  color: blue; }
+  color: blue;
+  font-family: 'Marcellus', serif; }
 
 /*# sourceMappingURL=all.min.css.map */
